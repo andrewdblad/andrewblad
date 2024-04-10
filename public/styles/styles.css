@@ -1,0 +1,187 @@
+
+
+:root {
+    --blue-1: #19A7CE;
+    --blue-2: #146C94;
+    --gray: #F6F1F1;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    height: 100vh;
+  }
+  
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+.home-logo img{
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border-radius: 50%;
+}  
+
+.home-name {
+    position: absolute;
+    padding-top: 13px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    /* text-shadow: 0 0 10px rgb(255, 255, 255, .5); */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.socials-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+  }
+
+  .header {
+    background: linear-gradient(to right, #2372c1, #a424d7);
+    text-align: center;
+    color: white;
+    min-height: 62px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+  }
+  
+.socials-container img {
+    width: 40px;
+    height: auto;
+}
+
+.resume {
+  border-radius: 30px;
+  border: none;
+  width: 90%; /* Adjust the width as needed */
+  height: 1130px;
+  max-width: 1250px;
+}
+
+.resume-container {
+  padding: 50px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.resume-container embed {
+  width: 100%; /* Ensure the embedded PDF fills its container */
+  height: 100%; /* Ensure the embedded PDF fills its container */
+}
+
+.resume-link-text {
+  background-color: #595858;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding-top: 10%;
+}
+
+.experience-line {
+  width: 5px;
+  height: calc(70vh - 400px);
+  background-color: rgb(255, 255, 255);
+}
+.about-me-line {
+  width: 5px;
+  height: 250px;
+  background: linear-gradient(to bottom, #2372c1, transparent);
+}
+.about-me-line::before {
+  content: '';
+  position: absolute;
+  transform: translateX(-7.5px);
+  width: 20px; /* Adjust the size of the circle */
+  height: 20px; /* Adjust the size of the circle */
+  background-color: #2372c1; /* Same color as the line */
+  border-radius: 50%; /* Make it a circle */
+}
+
+.about-me-container {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 25px;
+}
+.about-me-header {
+  border-radius: 10px;
+  padding-left: 20px;
+  color: white;
+  font-size: 30px;
+}
+.about-me-header h1 {
+  display: inline-block;
+  margin-right: 10px;
+}
+.about-me-header-name {
+  /* gradient */
+  background: linear-gradient(to right, #2372c1, #a424d7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* end of gradient */
+}
+.about-me-p {
+  padding-top: 20px;
+  color: white;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* This makes the container take up the full height of the viewport */
+}
+
+.hero-image {
+  width: auto; /* Allow the width to adjust based on container width */
+  height: 100%; /* Set the height to fill 70% of the container's height */
+  min-width: 100%; /* Ensure the image fills the entire width of the container */
+  object-fit: cover; 
+}
+.main-content {
+  background-color: #00051e;
+  min-height: 2000px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .about-me-header {
+    font-size: 20px;
+  }
+}
+
+  
